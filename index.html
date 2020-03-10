@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Hike Planner</title>
 </head>
 <body>
 
-    <!--DO THE NAV THING BUT MAKE IT GO LONGWAYS ACROSS TOP-->
     <p id="nav-arrow">v</p>
 
     <div class="nav">
@@ -27,19 +27,23 @@
     </div>
 
     <div class="location">
-        <h3 class="location-title">Where are you going?</h3>
-        <p class="location-p">Trails near you:</p>
-        <p class="location-result">Derp Canyon</p>
-        <p class="location-result">Derp Draw</p>
-        <p class="location-result">Derp South Crest</p>
-        <p class="location-result">Derp Wash</p>
-        <p class="location-p">Search for trails:</p>
+        <h3 class="location-title" id="destinations">Destinations</h3>
+        <p class="location-sub">Trails Near You</p>
+        <hr>
+        <div id="current">
+            <p id="location-current" class="location-search-btn">Allow use of Location</p>
+        </div>
+
+        <p class="location-sub">Search for Trails</p>
+        <hr>
+        <div id="search-results"></div>
         <form class="location-search">
-            <input class="location-search-input" name="trailsearch" type="text" value="Search trails..." /> <br /> 
+            <input class="location-search-input" name="trailsearch" type="text" placeholder="Search trails..." /> <br /> 
             <button class="location-search-btn" type="submit">Search</button>
         </form>
     </div>
 
     <script src="/src/js/index.js"></script>
+    <script src="/src/js/search.js" type="module"></script>
 </body>
 </html>
