@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+	height: 80px;
+	transform: translateY(-80px);
+	display: flex;
+	position: fixed;
+	width: 100%;
+	justify-content: space-between;
+	background-color: rgba(128, 128, 128, 0.404);
+
+	transition: all .5s;
+}
+
+.nav-logo {
+	padding-left: 20px;
+	font-size: 4rem;
+}
+
+.nav-list {
+	text-align: center;
+	list-style: none;
+	padding-right: 90px;
+}
+
+.nav-list-option {
+	padding: 20px 20px;
+	display: inline-block;
+	font-size: 2rem;
+}
+.nav-list-option:hover {
+	color: aquamarine;
+	cursor: pointer;
+}
+.nav-list-option:active {
+	filter: brightness(80%);
+}
+
+#nav-arrow {
+	top: .7rem;
+	right: 1.3rem;
+	position: fixed;
+	color: white;
+	font-size: 2rem;
+	padding: 10px 20px;
+	border-radius: 100%;
+	transition: all .5s;
+	z-index: 2;
+	background-color: rgba(128, 128, 128, 0.15);
+}
+
+#nav-arrow:hover {
+	background-color: gray;
+	color: aquamarine;
+	cursor: pointer;
+}
+
+.title {
+	text-align: center;
+	height: 80vh;
+	background-image: linear-gradient(#7fffd48c, #00b4788c), url(/src/img/jumbo1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+
+	/* animation: backgroundShift 20s infinite; */
+}
+
+.title-main {
+	font-size: 9rem;
+	padding-top: 80px;
+}
+
+.title-sub {
+	font-size: 4rem;
+	letter-spacing: 10px;
+}
+
+.location {
+	background-color: rgb(83, 168, 140);
+	text-align: center;
+}
+
+.location-title {
+	font-size: 3rem;
+	padding-top: 50px;
+}
+
+.location-p {
+	font-size: 2rem;
+}
+
+.location-result {
+	margin: 10px auto;
+	width: fit-content;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 1.3rem;
+	background-color: rgba(128, 128, 128, 0.5);
+}
+
+.location-result:hover {
+	filter: brightness(120%);
+	cursor: pointer;
+}
+
+.grow {
+	transform: translateY(0);
+}
+
+.rotate {
+	transform: rotate(180deg);
+}
+
+@keyframes backgroundShift {
+	0% {
+		background-position-x: 50px;
+	}
+	50% {
+		background-position-x: -50px;
+	}
+	100% {
+		background-position-x: 50px;
+	}
+}
