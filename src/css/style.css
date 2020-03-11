@@ -45,7 +45,7 @@ hr {
 	font-size: 2rem;
 }
 .nav-list-option:hover {
-	color: aquamarine;
+	color: rgb(181, 251, 228);
 	cursor: pointer;
 }
 .nav-list-option:active {
@@ -145,6 +145,9 @@ hr {
 	outline: none;
 	filter: brightness(120%);
 }
+.location-search-input::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
 
 .location-search-btn {
 	font-size: 1.5rem;
@@ -185,6 +188,7 @@ hr {
 .trail-name {
 	font-size: 1.3rem;
 	letter-spacing: .3rem;
+	color: rgb(165, 230, 208);
 }
 
 .trail-location {
@@ -200,8 +204,10 @@ hr {
 }
 
 .trail-summary {
+	font-weight: 600;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.3);
+	color: #4e4e4e;
+	background-color: rgba(255, 255, 255, 0.75);
 	padding: 5px;
 	margin-bottom: 5px;
 }
